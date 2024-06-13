@@ -1,0 +1,53 @@
+@import "./variables.scss";
+@import "./responsive.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container {
+  flex: 1;
+}
+
+// .main {
+//   font-family: "Inter", sans-serif;
+//   background-color: $main-bg;
+//   color: $dark-color;
+// }
+
+// .container {
+//   display: flex;
+//   width: 80%;
+// }
+
+// .menuContainer {
+//   width: 250px;
+//   padding: 5px 20px;
+//   border-right: 2px solid $soft-bg;
+
+//   @include lg {
+//     width: max-content;
+//   }
+// }
+
+// .contentContainer {
+//   padding: 5px 20px;
+//   width: 100%;
+// }

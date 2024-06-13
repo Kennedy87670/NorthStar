@@ -86,7 +86,7 @@ const Navbar = () => {
             <Badge badgeContent={4}>
               <LocalMallIcon />
             </Badge>
-            {/* <DehazeIcon /> */}
+            <DehazeIcon />
           </Box>
         </StyledToolbar>
       </Container>

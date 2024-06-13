@@ -1,0 +1,196 @@
+@import "../../pages/styles.jsx/variables.scss";
+@import "../../pages/styles.jsx/responsive.scss";
+
+.navbar {
+  display: flex;
+  height: 80px;
+  align-items: center;
+  width: 100%;
+  background-color: "rgba(255, 255, 255, 0.95)";
+  color: black;
+  position: fixed;
+  top: "0";
+  left: "0";
+  z-index: 1;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+
+  .container {
+    width: 80%;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+
+    @include xl {
+      padding: 0 50px;
+    }
+    @include xxl {
+      padding: 0 30px;
+    }
+
+    .logo {
+      font-size: 30px;
+      font-weight: bold;
+    }
+
+    .nav-bar {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+
+      @include md {
+        display: none;
+      }
+
+      .navlink {
+        display: block;
+        transition: 0.2s;
+        font-size: 15px;
+        text-decoration: none;
+        text-transform: capitalize;
+        color: $dark-color;
+        &:hover {
+          cursor: pointer;
+          color: $dark-neutral;
+        }
+        &:active {
+          color: $dark-neutral;
+        }
+        @include md {
+        }
+      }
+    }
+
+    .icons {
+      display: flex;
+
+      .mobile {
+        @include md {
+          display: none;
+        }
+        .burger {
+          @include md {
+            display: block;
+            cursor: pointer;
+          }
+
+          @include lg {
+            display: none;
+          }
+          @include xl {
+            display: none;
+          }
+          @include xxl {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+// .navbar {
+//   display: "flex";
+//   align-items: center;
+//   width: 100%;
+//   height: 35px;
+//   background-color: "rgba(255, 255, 255, 0.95)";
+//   color: "black";
+//   position: fixed;
+//   top: "0";
+//   left: "0";
+//   z-index: 1;
+//   border: 1px solid $dark-neutral;
+
+//   .container {
+//     width: 80%;
+//     margin: auto;
+//     display: flex;
+//     align-items: center;
+//     justify-content: space-between;
+//     @include sm {
+//       text-align: center;
+//       align-items: center;
+//       justify-content: space-between;
+//     }
+//     // gap: 50px;
+
+//     .nameicon {
+//       gap: 120px;
+//       display: flex;
+//       align-items: center;
+//       justify-content: space-between;
+
+//       //   @include sm {
+//       //     gap: 30px;
+//       //   }
+
+//       .logo {
+//         justify-content: space-between;
+//         .logoNavlink {
+//           text-decoration: none;
+//           color: $dark-color;
+//           font-size: 28px;
+//           &:hover {
+//             cursor: pointer;
+//             color: $dark-neutral;
+//           }
+//         }
+//       }
+
+//       .nabvar {
+//         display: flex;
+//         gap: 20px;
+//         align-items: center;
+
+//         @include sm {
+//           display: none;
+//         }
+//         .navlink {
+//           text-decoration: none;
+//           text-transform: capitalize;
+//           color: $dark-color;
+//           font-size: 13px;
+//           &:hover {
+//             cursor: pointer;
+//             background-color: $dark-neutral;
+//           }
+//         }
+//       }
+//     }
+
+//     .icons {
+//       display: flex;
+//       gap: 3px;
+
+//       //   @include sm {
+//       //     display: none;
+//       //   }
+
+//       .mobile {
+//         display: none;
+//         @include sm {
+//           display: none;
+//         }
+//       }
+//       .bugger {
+//         @include lg {
+//           display: none;
+//         }
+//         @include xxl {
+//           display: none;
+//         }
+//         @include xl {
+//           display: none;
+//         }
+//         @include sm {
+//           display: block;
+//         }
+//         // @include md {
+//         //   display: block;
+//         // }
+//       }
+//     }
+//   }
+// }
